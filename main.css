@@ -12,21 +12,17 @@
 	font-family:verdana;
 	font-size:11px;
 }
-
 .open {
 	display: flex !important;
 }
-
 .open_header {
 	padding-bottom: 100vh !important;
 }
-
 * {
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
 }
-
 @font-face {
 	
 	font-family: suisseIntl-r;
@@ -129,6 +125,7 @@ h3 {
 
 .header {
 	padding-bottom: 235px;
+
 }
 
 .hidden{
@@ -496,7 +493,13 @@ footer {
 }
 
 /*Адаптив*/
-
+	
+@media (min-height: 501px) and (max-height: 1000px) and (orientation: landscape) {
+	.header{
+		height: 100vh;
+		display: flex;
+	}
+}
   @media screen and (max-width: 1200px) {
 	.container {
 	  width: 900px;
@@ -655,7 +658,6 @@ footer {
 	  width: 100%;
 	  padding: 0 30px;
 	}
-
 	.header_menu {
 		padding-left: 30px;
 		padding-right: 30px;
